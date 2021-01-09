@@ -102,10 +102,8 @@ const HomePage = () => {
                   alt={tea.picture.altText}
                 />
                 <div className="tea-info">
-                  <p>
-                    {tea.firstName} {tea.lastName}
-                  </p>
-                  <p>{tea.teaName}</p>
+                  <p>{tea.name}</p>
+                  <p></p>
                 </div>
               </Tea>
             ))}

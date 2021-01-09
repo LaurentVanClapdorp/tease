@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
       width: 60%;
+      height: 30%;
       padding: 1rem;
       background-color: ${COLORS.PRIMARY + "d0"};
 
@@ -48,7 +49,7 @@ export const Wrapper = styled.div`
         color: white;
         text-transform: uppercase;
         margin: auto;
-        border-bottom: solid 5px white;
+        padding-bottom: 10px;
         margin-bottom: 1rem;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
