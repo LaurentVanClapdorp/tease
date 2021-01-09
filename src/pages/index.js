@@ -93,7 +93,7 @@ const HomePage = () => {
           <BottomEdgeUp color={COLORS.PRIMARY} />
         </div>
         <div className="teas">
-          <h2>Featured teas</h2>
+          <h2>Featured tea</h2>
           <div className="tea-items">
             {homePageFeavoriteTea.map(({ tea, slug }) => (
               <Tea key={slug} to={`/${slug}`}>

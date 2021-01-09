@@ -183,7 +183,7 @@ export const Tea = styled(Link)`
       background-color: ${COLORS.TERTIARY + "c0"};
 
       p {
-        color: ${COLORS.BLACK};
+        color: ${COLORS.WHITE};
       }
     }
   }
@@ -198,7 +198,7 @@ export const Tea = styled(Link)`
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: ${COLORS.BLACK + "c0"};
+    background-color: ${COLORS.QUADRI + "c0"};
     transition: all 0.3s ease-in-out;
 
     p {
@@ -221,7 +221,7 @@ export const BottomEdgeDown = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 130px solid ${COLORS.TERTIARY};
+  border-bottom: 120px solid ${COLORS.TERTIARY};
   border-right: 100vw solid transparent;
 
   &:before {
@@ -229,7 +229,7 @@ export const BottomEdgeDown = styled.div`
     display: block;
     border-bottom: ${({ color }) => `100px solid ${color}`};
     border-right: 100vw solid transparent;
-    transform: translateY(130px) scale(1.05);
+    transform: translateY(120px) scale(1.05);
   }
 `
 
@@ -237,7 +237,7 @@ export const BottomEdgeUp = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 140px solid ${COLORS.TERTIARY};
+  border-bottom: 100px solid ${COLORS.TERTIARY};
   border-right: 100vw solid transparent;
 
   &:after {
@@ -246,7 +246,7 @@ export const BottomEdgeUp = styled.div`
     border-bottom: ${({ color }) => `100px solid ${color}`};
     border-left: 100vw solid transparent;
 
-    transform: translateY(140px) scale(1.05);
+    transform: translateY(100px) scale(1.05);
   }
 `
 
