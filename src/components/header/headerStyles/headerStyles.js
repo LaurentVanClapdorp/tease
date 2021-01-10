@@ -1,10 +1,6 @@
 import Img from "gatsby-image"
 import styled from "styled-components"
-import {
-  COLORS,
-  FONT_FAMILIES,
-  MEDIA_QUERIES,
-} from "../../../templates/constants"
+import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../../constants"
 
 export const HeaderWrapper = styled.header`
   display: flex;

@@ -10,7 +10,7 @@ import {
   BottomEdgeUp,
   Tea,
 } from "../pageStyles/pageStyles"
-import { COLORS } from "../templates/constants"
+import { COLORS } from "../constants"
 
 const HomePage = () => {
   const {
