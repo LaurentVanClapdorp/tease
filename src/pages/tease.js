@@ -70,18 +70,18 @@ const TeasePage = () => {
   return (
     <Layout>
       <SEO title="Tease" />
-      <Wrapper teasColor={COLORS.BLACK} descriptionColor={COLORS.SECONDARY}>
+      <Wrapper teasColor={COLORS.SECONDARY} descriptionColor={COLORS.BLACK}>
         <div className="banner">
           <Image
             fluid={teasePageHeaderPicture.imageFile.childImageSharp.fluid}
             alt={teasePageHeaderPicture.altText}
           />
-          <BottomEdgeDown color={COLORS.SECONDARY} />
+          <BottomEdgeDown color={COLORS.BLACK} />
         </div>
         <div className="description">
           <h2>The Tease Community</h2>
           <p>{teasePageDescription}</p>
-          <BottomEdgeUp color={COLORS.BLACK} />
+          <BottomEdgeUp color={COLORS.SECONDARY} />
         </div>
         <div className="teas">
           <h2>Our teas</h2>

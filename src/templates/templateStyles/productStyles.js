@@ -4,13 +4,14 @@ import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
 
 export const Wrapper = styled.div`
   background-color: ${COLORS.BLACK};
-  margin-top: 100px;
 
   .tea-container {
     display: flex;
-    margin: 3rem auto;
+    margin: auto;
+    margin-top: 4rem;
     width: 90%;
-    background-color: ${COLORS.GREY};
+    height: 100%;
+    background-color: ${COLORS.SECONDARY};
 
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
@@ -39,7 +40,6 @@ export const Wrapper = styled.div`
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         background-color: ${COLORS.GREY};
-        border-right: solid 15px ${COLORS.SECONDARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           color: ${COLORS.PRIMARY};
@@ -66,7 +66,6 @@ export const Wrapper = styled.div`
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
         font-size: 4rem;
-        border-bottom: ${COLORS.WHITE} solid 6px;
         padding-bottom: 1rem;
         margin-left: auto;
         margin-bottom: 0.5rem;
@@ -100,7 +99,7 @@ export const Wrapper = styled.div`
 
       .description {
         font-size: 1.2rem;
-        color: ${COLORS.TERTIARY};
+        color: ${COLORS.BLACK};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1rem;
@@ -109,20 +108,9 @@ export const Wrapper = styled.div`
 
       .info {
         font-family: 2rem;
-        text-transform: uppercase;
       }
     }
   }
-
-  .tea-pictures {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 2rem;
-
-    @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-      flex-direction: column;
-    }
 
     .tea-picture {
       width: 28.5vw;

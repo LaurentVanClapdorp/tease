@@ -101,8 +101,8 @@ export const Wrapper = styled.div`
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
-    margin-top: 2rem;
 
+    background-color: ${COLORS.BLACK};
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
     }

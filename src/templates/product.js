@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Wrapper, Image } from "./templateStyles/productStyles"
+import { COLORS } from "../constants"
 
 const TeaTemplate = ({
   data: {
@@ -17,7 +18,7 @@ const TeaTemplate = ({
   return (
     <Layout>
       <SEO title="Tea" />
-      <Wrapper>
+      <Wrapper descriptionColor={COLORS.SECONDARY}>
         <div className="tea-container">
           <div className="tea-image">
             <Image
