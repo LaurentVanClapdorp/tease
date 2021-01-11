@@ -102,7 +102,7 @@ export const Wrapper = styled.div`
     font-weight: 600;
     text-align: center;
 
-    background-color: ${COLORS.BLACK};
+    background-color: ${COLORS.REALWHITE};
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
     }
@@ -118,10 +118,10 @@ export const Wrapper = styled.div`
 
       p {
         margin-top: 1rem;
-        color: white;
+        color: ${COLORS.TERTIARY};
 
         a {
-          color: ${COLORS.SECONDARY};
+          color: ${COLORS.TERTIARY};
         }
       }
     }

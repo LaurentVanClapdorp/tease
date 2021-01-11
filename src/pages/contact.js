@@ -5,7 +5,6 @@ import { RiMailSendFill, RiPhoneLine, RiUserLocationLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Wrapper, Image } from "../pageStyles/pageStyles"
-import { COLORS } from "../constants"
 
 const ContactPage = () => {
   const {
@@ -53,15 +52,15 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Contact" />
-      <Wrapper descriptionColor={COLORS.PRIMARY}>
+      <Wrapper>
         <div className="banner">
           <Image
             fluid={contactPageHeaderPicture.imageFile.childImageSharp.fluid}
           />
-        </div>
-        <div className="description">
-          <h2>Contact Us</h2>
-          <p>{contactPageDescription}</p>
+          <div className="inner-div">
+            <h2 className="header-title">Contact Us</h2>
+            <p className="header-description">{contactPageDescription}</p>
+          </div>
         </div>
         <div className="contact-info">
           <div>

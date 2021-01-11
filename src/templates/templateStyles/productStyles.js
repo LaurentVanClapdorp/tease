@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { COLORS, FONT_FAMILIES, MEDIA_QUERIES } from "../../constants"
 
 export const Wrapper = styled.div`
-  background-color: ${COLORS.BLACK};
+  background-color: ${COLORS.REALWHITEs};
 
   .tea-container {
     display: flex;
@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     margin-top: 4rem;
     width: 90%;
     height: 100%;
-    background-color: ${COLORS.SECONDARY};
+    background-color: ${COLORS.REALWHITE};
 
     @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
       flex-direction: column;
@@ -19,6 +19,8 @@ export const Wrapper = styled.div`
 
     .tea-image {
       position: relative;
+      max-width: 500px;
+      max-height: 500px;
       width: 40vw;
       height: 40vw;
 
@@ -30,16 +32,14 @@ export const Wrapper = styled.div`
 
       .types {
         position: absolute;
-        right: 0;
-        bottom: 0;
+        top: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        color: ${COLORS.SECONDARY};
+        color: ${COLORS.TERTIARY};
         font-family: ${FONT_FAMILIES.TITLE};
         text-transform: uppercase;
-        background-color: ${COLORS.GREY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           color: ${COLORS.PRIMARY};
@@ -57,6 +57,7 @@ export const Wrapper = styled.div`
       flex-direction: column;
       width: 60vw;
       padding: 1.5rem 2rem;
+      color: ${COLORS.QUADRI};
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         width: 100%;
@@ -68,7 +69,8 @@ export const Wrapper = styled.div`
         font-size: 4rem;
         padding-bottom: 1rem;
         margin-left: auto;
-        margin-bottom: 0.5rem;
+        margin-bottom: 5%;
+        color: ${COLORS.TERTIARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           margin-right: auto;
@@ -77,29 +79,10 @@ export const Wrapper = styled.div`
         }
       }
 
-      h3 {
-        font-family: ${FONT_FAMILIES.TITLE};
-        color: ${COLORS.SECONDARY};
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        margin-left: auto;
-        margin-bottom: auto;
-
-        @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-          font-size: 1.3rem;
-          margin-right: auto;
-          margin-left: 0;
-          margin-bottom: 1rem;
-        }
-
-        span:first-child {
-          color: ${COLORS.TERTIARY};
-        }
-      }
-
       .description {
         font-size: 1.2rem;
-        color: ${COLORS.BLACK};
+        margin-bottom: 10%;
+        color: ${COLORS.QUADRI};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1rem;
