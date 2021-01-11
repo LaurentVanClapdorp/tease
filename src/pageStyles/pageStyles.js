@@ -156,6 +156,7 @@ export const Wrapper = styled.div`
       flex-wrap: wrap;
       width: 100%;
       padding: 0 5%;
+      margin-bottom: 2rem;
     }
   }
 `
@@ -166,6 +167,7 @@ export const Tea = styled(Link)`
   width: 22vw;
   height: 22vw;
   margin: 2vw;
+  margin-bottom : 5%;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 
@@ -209,14 +211,6 @@ export const Tea = styled(Link)`
   }
 `
 
-export const BottomEdgeDown = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  border-bottom: 50px solid ${COLORS.TERTIARY};
-  border-right: 100vw solid transparent;
-`
-
 export const GradientShining = styled.div`
   border-style: solid;
   border-width: 3px;
@@ -227,23 +221,6 @@ export const GradientShining = styled.div`
       rgba(0, 0, 0, 1) 100%
     )
     100% 0 100% 0/3px 0 3px 0 stretch;
-`
-
-export const BottomEdgeUp = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  border-bottom: 100px solid ${COLORS.TERTIARY};
-  border-right: 100vw solid transparent;
-
-  &:after {
-    content: "";
-    display: block;
-    border-bottom: ${({ color }) => `100px solid ${color}`};
-    border-left: 100vw solid transparent;
-
-    transform: translateY(100px) scale(1.05);
-  }
 `
 
 export const Image = styled(Img)`

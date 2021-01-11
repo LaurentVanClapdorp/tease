@@ -3,13 +3,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {
-  Wrapper,
-  Image,
-  BottomEdgeDown,
-  BottomEdgeUp,
-  Tea,
-} from "../pageStyles/pageStyles"
+import { Wrapper, Image, Tea } from "../pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
 const TeasePage = () => {
@@ -70,18 +64,19 @@ const TeasePage = () => {
   return (
     <Layout>
       <SEO title="Tease" />
-      <Wrapper teasColor={COLORS.SECONDARY} descriptionColor={COLORS.BLACK}>
+      <Wrapper teasColor={COLORS.REALWHITE} descriptionColor={COLORS.REALWHITE}>
         <div className="banner">
           <Image
             fluid={teasePageHeaderPicture.imageFile.childImageSharp.fluid}
             alt={teasePageHeaderPicture.altText}
           />
-          <BottomEdgeDown color={COLORS.BLACK} />
+          <div className="inner-div">
+            <h2 className="header-title">The Tease Community</h2>
+            <p className="header-description">Check Our Tea Below!</p>
+          </div>
         </div>
         <div className="description">
-          <h2>The Tease Community</h2>
           <p>{teasePageDescription}</p>
-          <BottomEdgeUp color={COLORS.SECONDARY} />
         </div>
         <div className="teas">
           <h2>Our teas</h2>

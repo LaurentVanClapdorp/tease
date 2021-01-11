@@ -19,9 +19,9 @@ export const HeaderWrapper = styled.header`
   border-width: 3px;
   border-image: linear-gradient(
       to left,
-      rgba(51, 204, 255, 1) 1%,
+      rgba(204, 242, 255, 1) 1%,
       rgba(185, 147, 198, 1) 50%,
-      rgba(51, 204, 255, 255) 100%
+      rgba(204, 242, 255, 1) 100%
     )
     0 0 100% 0/0 0 3px 0 stretch;
 

@@ -4,12 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { RiMailSendFill, RiPhoneLine, RiUserLocationLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {
-  Wrapper,
-  Image,
-  BottomEdgeDown,
-  BottomEdgeUp,
-} from "../pageStyles/pageStyles"
+import { Wrapper, Image } from "../pageStyles/pageStyles"
 import { COLORS } from "../constants"
 
 const ContactPage = () => {
@@ -63,12 +58,10 @@ const ContactPage = () => {
           <Image
             fluid={contactPageHeaderPicture.imageFile.childImageSharp.fluid}
           />
-          <BottomEdgeDown color={COLORS.PRIMARY} />
         </div>
         <div className="description">
           <h2>Contact Us</h2>
           <p>{contactPageDescription}</p>
-          <BottomEdgeUp color={COLORS.BLACK} />
         </div>
         <div className="contact-info">
           <div>
