@@ -3,7 +3,7 @@ export const COLORS = {
   SECONDARY: "#3BBFCF",
   TERTIARY: "#B993C6",
   QUADRI: "#633473",
-  WHITE: "#EEFAFC",
+  WHITE: "#ccf2ff",
   REALWHITE: "#ffffff",
   BLACK: "#021E21",
   GREY: "#485D60",

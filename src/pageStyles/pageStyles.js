@@ -141,7 +141,7 @@ export const Wrapper = styled.div`
       font-size: 3rem;
       color: ${COLORS.TERTIARY};
       text-transform: uppercase;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         font-size: 2rem;
@@ -177,14 +177,6 @@ export const Tea = styled(Link)`
 
   &:hover {
     transform: scale(1.05);
-
-    .tea-info {
-      height: 100%;
-      background-color: ${COLORS.TERTIARY + "c0"};
-
-      p {
-        color: ${COLORS.WHITE};
-      }
     }
   }
 
@@ -192,20 +184,20 @@ export const Tea = styled(Link)`
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 0;
+    bottom: 100%;
     height: 80px;
     width: 100%;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: ${COLORS.QUADRI + "c0"};
+
     transition: all 0.3s ease-in-out;
 
     p {
       text-transform: uppercase;
       font-size: 1.3rem;
       font-weight: 600;
-      color: white;
+      color: ${COLORS.TERTIARY};
       margin: 0;
     }
 

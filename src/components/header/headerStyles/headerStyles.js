@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.header`
   top: 0;
   width: 100%;
   height: 80px;
-  background: ${COLORS.REALWHITE};
+  background: ${COLORS.WHITE};
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
@@ -19,9 +19,9 @@ export const HeaderWrapper = styled.header`
   border-width: 3px;
   border-image: linear-gradient(
       to left,
-      rgba(255, 255, 255, 1) 1%,
+      rgba(51, 204, 255, 1) 1%,
       rgba(185, 147, 198, 1) 50%,
-      rgba(255, 255, 255, 255) 100%
+      rgba(51, 204, 255, 255) 100%
     )
     0 0 100% 0/0 0 3px 0 stretch;
 
