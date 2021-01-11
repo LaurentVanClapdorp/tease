@@ -4,6 +4,7 @@ export const COLORS = {
   TERTIARY: "#B993C6",
   QUADRI: "#633473",
   WHITE: "#EEFAFC",
+  REALWHITE: "#ffffff",
   BLACK: "#021E21",
   GREY: "#485D60",
 }

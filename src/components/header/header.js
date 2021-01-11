@@ -34,7 +34,6 @@ const Header = ({ siteTitle }) => {
     <HeaderWrapper>
       <Link to="/">
         <Image alt="logo TEAse" fixed={logo.childImageSharp.fixed} />
-        <img />
       </Link>
       <Menu menuItems={menuItems.edges} />
     </HeaderWrapper>

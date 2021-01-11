@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
       width: 60%;
       height: 30%;
       padding: 1rem;
-      background-color: ${COLORS.PRIMARY + "d0"};
+      background-color: transparant;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         top: 120px;
@@ -64,8 +64,8 @@ export const Wrapper = styled.div`
     flex-direction: column;
     position: relative;
     width: 100%;
-    padding: 3rem 0 10rem;
-    background-color: ${({ descriptionColor = COLORS.BLACK }) =>
+    padding: 3rem 0 2rem;
+    background-color: ${({ descriptionColor = COLORS.REALWHITE }) =>
       `${descriptionColor}`};
 
     h2 {
@@ -84,7 +84,7 @@ export const Wrapper = styled.div`
     p {
       width: 70%;
       font-size: 1.3rem;
-      color: ${COLORS.TERTIARY};
+      color: ${COLORS.QUADRI};
       text-align: center;
       line-height: 2rem;
       margin: auto;
@@ -134,12 +134,12 @@ export const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     padding: 2rem 5%;
-    background-color: ${({ teasColor = COLORS.PRIMARY }) => `${teasColor}`};
+    background-color: ${({ teasColor = COLORS.REALWHITE }) => `${teasColor}`};
 
     h2 {
       font-family: ${FONT_FAMILIES.TITLE};
       font-size: 3rem;
-      color: white;
+      color: ${COLORS.TERTIARY};
       text-transform: uppercase;
       margin-bottom: 3rem;
 
@@ -221,16 +221,20 @@ export const BottomEdgeDown = styled.div`
   position: absolute;
   bottom: 0;
   width: 0;
-  border-bottom: 120px solid ${COLORS.TERTIARY};
+  border-bottom: 50px solid ${COLORS.TERTIARY};
   border-right: 100vw solid transparent;
+`
 
-  &:before {
-    content: "";
-    display: block;
-    border-bottom: ${({ color }) => `100px solid ${color}`};
-    border-right: 100vw solid transparent;
-    transform: translateY(120px) scale(1.05);
-  }
+export const GradientShining = styled.div`
+  border-style: solid;
+  border-width: 3px;
+  border-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 1) 1%,
+      rgba(0, 255, 255, 1) 50%,
+      rgba(0, 0, 0, 1) 100%
+    )
+    100% 0 100% 0/3px 0 3px 0 stretch;
 `
 
 export const BottomEdgeUp = styled.div`

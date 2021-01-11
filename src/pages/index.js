@@ -3,14 +3,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {
-  Wrapper,
-  Image,
-  BottomEdgeDown,
-  BottomEdgeUp,
-  Tea,
-} from "../pageStyles/pageStyles"
-import { COLORS } from "../constants"
+import { Wrapper, Image, Tea } from "../pageStyles/pageStyles"
 
 const HomePage = () => {
   const {
@@ -86,11 +79,9 @@ const HomePage = () => {
             <p className="header-title">{homePageHeaderTitle}</p>
             <p className="header-description">{homePageHeaderDescription}</p>
           </div>
-          <BottomEdgeDown color={COLORS.BLACK} />
         </div>
         <div className="description">
           <p>{homePageDescription}</p>
-          <BottomEdgeUp color={COLORS.PRIMARY} />
         </div>
         <div className="teas">
           <h2>Featured tea</h2>

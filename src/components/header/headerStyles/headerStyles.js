@@ -9,12 +9,21 @@ export const HeaderWrapper = styled.header`
   top: 0;
   width: 100%;
   height: 80px;
-  background: ${COLORS.BLACK};
+  background: ${COLORS.REALWHITE};
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
   margin-bottom: 1.45rem;
   z-index: 999;
+  border-style: solid;
+  border-width: 3px;
+  border-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 1%,
+      rgba(185, 147, 198, 1) 50%,
+      rgba(255, 255, 255, 255) 100%
+    )
+    0 0 100% 0/0 0 3px 0 stretch;
 
   a {
     display: flex;
@@ -43,7 +52,7 @@ export const MenuList = styled.ul`
     justify-content: center;
     align-items: center;
     a {
-      color: ${COLORS.WHITE};
+      color: ${COLORS.GREY};
       font-size: 1.2rem;
       font-family: ${FONT_FAMILIES.BUTTON};
       text-transform: uppercase;
